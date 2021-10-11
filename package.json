@@ -5,6 +5,7 @@
         "jest": "^27.2.5"
     },
     "scripts": {
-        "test": "jest index.test.js; jest --env=jsdom index.test.js"
+        "test": "jest index.test.js; jest --env=jsdom index.test.js",
+        "test:fix": "jest --env=jsdom --setupFilesAfterEnv ./fix.js -- index.test.js"
     }
 }
